@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure Collector's Shop</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e; /
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #16213e;
+    color: #0f3460;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #e94560;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e94560;
+}
+
+header p {
+    font-style: italic;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.item-card {
+    background: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    border-color: #e94560;
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px; /
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #0f3460; 
+}
+
+.item-card h3 {
+    color: #e94560;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4cd137;
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.btn {
+    background-color: #e94560;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #c0354c;
+}
+
+footer {
+    background-color: #0f3460;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Concert Ticket Hololive shop</h1>
+    <p>Premium Anime Ticket Selling Favorate & Hololive Member Concert</p>
+</header>
+
+<div class="container">
+
+    <h2>Featured Figures</h2>
+
+    <div class="menu-grid">
+        <div class="item-card">
+            <img src="ina.webp">
+            
+            <h3>ninomae ina'nis</h3>
+            <p class="description">“Takanashi Kiara / Ninomae Ina’nis 1st Concert ‘Drawn to Dawn’” at The Wiltern in Los Angeles, March 27th and 28th, 2026!.</p>
+            <p class="price">₱1,500</p>
+            <button class="btn">Order Now</button>
+        </div>
+
+        <div class="item-card">
+            <img src="Hoshimachi Suisei.png">
+            <h3>Hoshimachi Suisei</h3>
+            <p class="description">Hoshimachi Suisei 1st Solo Live “STELLAR into the GALAXY” Supported By Bushiroad Special Guests!.</p>
+            <p class="price">₱1,500</p>
+            <button class="btn">Order Now</button>
+        </div>
+
+        <div class="item-card">
+            <img src="Tokoyami Towa.jpg">
+            <h3>Tokoyami Towa</h3>
+            <p class="description">"Tokoyami Towa 1st solo Live “Break your “ will be held at TACHIKAWA STAGE GARDEN on October 13th, 2023!.</p>
+            <p class="price">₱1,500</p>
+            <button class="btn">Order Now</button>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Concert Ticket Hololive Shop</p>
+</footer>
+
+</body>
+</html>
